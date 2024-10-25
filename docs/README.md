@@ -135,7 +135,7 @@ description={система компьютерной вёрстки}
 \end{example}
 ```
 
-
 ```
-Написал Fe-Ti aka Tim Kravchenko в 2024 году
+Файлик написал Fe-Ti (aka Tim Kravchenko) в 2024 году.
+По всем вопросам обращаться в исходный код.
 ```
