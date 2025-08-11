@@ -119,8 +119,10 @@
     \end{center}
     \begin{flushleft}
         \fontsize{12pt}{14pt}\selectfont
-        ФАКУЛЬТЕТ \tabto{3cm} \@faculty \\
-        КАФЕДРА \tabto{3cm} \@department
+		\begin{tabularx}{\linewidth}{Xp{0.75\linewidth}}
+            ФАКУЛЬТЕТ \tabto{3cm} & \@faculty \\
+            КАФЕДРА \tabto{3cm} & \@department
+        \end{tabularx}
     \end{flushleft}
 }
 
