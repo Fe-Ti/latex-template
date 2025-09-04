@@ -71,6 +71,9 @@
 \newcommand{\version}[1]{\gdef\@version{Вариант #1}} % Если указан вариант, то определяем команду
 \providecommand{\@version}{~} % Если не указан вариант, то заменяем на пустоту
 
+\newcommand{\counttitlepage}{\gdef\@counttitlepage{ \stepcounter{page} }}
+\providecommand{\@counttitlepage}{}
+
 \RequirePackage{fancyhdr}
 \fancypagestyle{year}{
   \fancyfoot[C]{\itshape Москва, \the\year~г.}
@@ -295,4 +298,5 @@
 
         \clearpage
     \end{titlepage}
+    \@counttitlepage
 }
