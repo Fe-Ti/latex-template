@@ -23,6 +23,14 @@
 		применяют следующие сокращения и обозначения:}
 	\def\fillTitle{\fillOrdinaryTitle}
 }
+\DeclareOption{presentation}{
+	\def\termsAndDefinitionsLine{В настоящем документе
+		применяют следующие термины с соответствующими определениями:}
+	\def\abbreviationsLine{В настоящем документе
+		применяют следующие сокращения и обозначения:}
+	\def\fillTitle{\fillPresentationTitle}
+	\def\presentationGeometry{\geometry{landscape}}
+}
 
 \ExecuteOptions{diploma}
 \ProcessOptions

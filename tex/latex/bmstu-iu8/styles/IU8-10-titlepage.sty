@@ -279,6 +279,19 @@
 	\clearpage
 }
 
+\newcommand\fillPresentationTitle{
+	\noindent\begin{center}
+		{\fontsize{20pt}{25pt}\selectfont Выпускная~квалификационная~работа~на~тему:}\\
+		{\bfseries\fontsize{20pt}{25pt}\selectfont \@theme} \\
+		~\\
+		\vfill
+		{\fontsize{15pt}{20pt}\selectfont \@student,~группа~\@group} \\
+		{\fontsize{15pt}{20pt}\selectfontНаучный~руководитель~---~\@supervisorWithDegree}
+	\end{center}
+
+	\clearpage
+}
+
 \renewcommand\maketitle{
     \begin{titlepage}
         \settowidth{\maxlen}{\@student}
