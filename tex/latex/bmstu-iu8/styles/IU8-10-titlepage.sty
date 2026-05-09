@@ -95,6 +95,11 @@
     }
 }
 
+% Переопределение размера шрифта в заголовке \makeBMSTUHeader
+% По умолчанию он равен 10pt
+\def\headerFontSize#1{\gdef\@headerFontSize{#1}}
+\providecommand{\@headerFontSize}{10pt}
+
 \newcommand\makeBMSTUHeader{
     \noindent\begin{minipage}{0.05\textwidth}
         \includegraphics[scale=0.4]{inc/bmstu.png}
@@ -102,7 +107,7 @@
     \hfill
     \begin{minipage}{0.85\textwidth}\raggedleft
         \begin{center}
-            \fontsize{10pt}{0.3\baselineskip}\selectfont 
+            \fontsize{\@headerFontSize}{0.3\baselineskip}\selectfont 
             \textbf{Министерство науки и высшего образования 
                 Российской Федерации \\ 
                 Федеральное государственное автономное образовательное 
@@ -279,7 +284,8 @@
 	\clearpage
 }
 
-\newcommand\fillPresentationTitle{
+% Дополнительный титул для презентации на защите ВКР
+\newcommand\fillDiplomaPresentationTitle{
 	\noindent\begin{center}
 		{\fontsize{20pt}{25pt}\selectfont Выпускная~квалификационная~работа~на~тему:}\\
 		{\bfseries\fontsize{23pt}{27pt}\selectfont \@theme} \\

@@ -28,7 +28,7 @@
 		применяют следующие термины с соответствующими определениями:}
 	\def\abbreviationsLine{В настоящем документе
 		применяют следующие сокращения и обозначения:}
-	\def\fillTitle{\fillPresentationTitle}
+	\def\fillTitle{\fillDiplomaPresentationTitle}
 	\def\presentationGeometry{\geometry{landscape}}
 }
 
