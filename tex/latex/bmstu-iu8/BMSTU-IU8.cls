@@ -29,7 +29,7 @@
 	\def\abbreviationsLine{В настоящем документе
 		применяют следующие сокращения и обозначения:}
 	\def\fillTitle{\fillDiplomaPresentationTitle}
-	\def\presentationGeometry{\geometry{landscape}}
+	\def\presentationGeometry{\geometry{landscape, left=20mm, right=20mm, top=15mm, bottom=20mm} \setlength{\parindent}{0cm}}
 }
 
 \ExecuteOptions{diploma}
