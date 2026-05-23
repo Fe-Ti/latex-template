@@ -27,3 +27,9 @@ jobs:
           cd ./full-example
           latexmk -c ./main.tex
 
+      - name: "Git artifact: PDF"
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDF
+          path: |
+            ./full-example/main.pdf
