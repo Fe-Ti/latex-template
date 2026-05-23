@@ -13,8 +13,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
       - uses: Fe-Ti/latex-template/actions/miktex@master
 
       - name: Compile full example
@@ -28,9 +26,3 @@ jobs:
           cd ./full-example
           latexmk -c ./main.tex
 
-      - name: "Git artifact: PDF"
-        uses: actions/upload-artifact@v4
-        with:
-          name: PDF
-          path: |
-            ./full-example/main.pdf
