@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: Fe-Ti/latex-template/actions/miktex@fixup-list-indentation
+      - uses: Fe-Ti/latex-template/actions/miktex@fix-CI-error
 
       - name: Compile full example
         run: |
