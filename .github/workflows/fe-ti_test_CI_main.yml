@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: Fe-Ti/latex-template/actions/miktex@master
+      - uses: Fe-Ti/latex-template/actions/miktex@fixup-list-indentation
 
       - name: Compile full example
         run: |
