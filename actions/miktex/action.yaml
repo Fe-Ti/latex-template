@@ -25,9 +25,11 @@ runs:
         sudo miktex --admin packages update-package-database
         sudo miktex --admin packages update
         sudo miktex packages update
+        sudo miktex packages install xkeyval
 
     - name: Update MikTeX (user)
       shell: bash
       run: |
         miktex packages update-package-database
         miktex packages update
+        miktex packages install xkeyval
