@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
       - uses: Fe-Ti/latex-template/actions/miktex@fix-CI-error
 
       - name: Compile full example
@@ -28,7 +28,7 @@ jobs:
           latexmk -c ./main.tex
 
       - name: "Git artifact: PDF"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: PDF
           path: |
